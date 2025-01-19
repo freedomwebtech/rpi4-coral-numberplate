@@ -1,6 +1,5 @@
 import cv2
 import pandas as pd
-import numpy as np
 from ultralytics import YOLO
 from paddleocr import PaddleOCR
 from tracker import Tracker
@@ -12,9 +11,9 @@ from datetime import datetime
 ocr = PaddleOCR()
 
 # Initialize Firebase
-cred = credentials.Certificate("rpi4-numberplate-coral-firebase-adminsdk-fbsvc-ced41e38fd.json")
+cred = credentials.Certificate("")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://rpi4-numberplate-coral-default-rtdb.firebaseio.com/'
+    'databaseURL': ''
 })
 
 

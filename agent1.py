@@ -4,13 +4,13 @@ import pandas as pd
 import google.generativeai as genai
 
 # Initialize Firebase
-cred = credentials.Certificate("rpi4-numberplate-coral-firebase-adminsdk-fbsvc-ced41e38fd.json")
+cred = credentials.Certificate("")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://rpi4-numberplate-coral-default-rtdb.firebaseio.com/'
+    'databaseURL': ''
 })
 
 # Initialize Google Generative AI
-genai.configure(api_key="AIzaSyDZd4KxvJ3e3yhBJvIfeCIM7FtRXokwm6s")  # Add your actual API key here
+genai.configure(api_key="")  # Add your actual API key here
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Function to read data from Firebase and convert to DataFrame

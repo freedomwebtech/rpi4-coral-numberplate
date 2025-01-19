@@ -2,9 +2,9 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 # Initialize Firebase
-cred = credentials.Certificate("rpi4-numberplate-coral-firebase-adminsdk-fbsvc-ced41e38fd.json")
+cred = credentials.Certificate("")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://rpi4-numberplate-coral-default-rtdb.firebaseio.com/'
+    'databaseURL': ''
 })
 
 # Function to read data from Firebase

@@ -11,9 +11,9 @@ from datetime import datetime
 ocr = PaddleOCR()
 
 # Initialize Firebase
-cred = credentials.Certificate("rpi4-numberplate-coral-firebase-adminsdk-fbsvc-7cdd1fda67.json")
+cred = credentials.Certificate("")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://rpi4-numberplate-coral-default-rtdb.firebaseio.com/'
+    'databaseURL': ''
 })
 
 

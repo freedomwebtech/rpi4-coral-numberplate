@@ -72,7 +72,7 @@ while True:
         x2 = int(row[2])
         y2 = int(row[3])
         d = int(row[5])
-        c = class_list[d]
+        
        
         list.append([x1,y1,x2,y2])
     bbox_idx=tracker.update(list)

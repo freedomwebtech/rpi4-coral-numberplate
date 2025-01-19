@@ -22,9 +22,7 @@ model = YOLO('best_full_integer_quant_edgetpu.tflite')
 
 cap = cv2.VideoCapture('num1.mp4')
 
-my_file = open("coco1.txt", "r")
-data = my_file.read()
-class_list = data.split("\n")
+
 
 frame_count = 0
 cy1=79
